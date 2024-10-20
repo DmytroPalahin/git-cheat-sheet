@@ -1,5 +1,0 @@
-second file text
-
-Changes made in the main branch
-
-Add some text

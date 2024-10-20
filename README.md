@@ -4,7 +4,7 @@
 
 ## GitHub - Git repository hosting service
 
-### Basic Git Commands
+## Basic Git Commands
 
 ```bash
 git --version      # Show Git version
@@ -103,8 +103,8 @@ git clone <url>          # Clone a remote repository to the local machine
 
 ```bash
 git remote add origin <url>  # Connect a remote repository
-git remote                  # List remote repositories
-git remote -v               # Show URLs for remote repositories
+git remote                   # List remote repositories
+git remote -v                # Show URLs for remote repositories
 ```
 
 ### Push Changes to Remote
@@ -118,58 +118,95 @@ git push -u origin main       # Push changes to the main branch
 
 ## Typical Workflow
 
-1. Check the status of your working directory:
+### Check the status of your working directory
 
-    ```bash
-    git status
-    ```
+```bash
+git status
+```
 
-2. Add or remove files:
+### Add or remove files
 
-    ```bash
-    git add <file>   # Add a specific file to the staging area
-    git rm <file>    # Remove a specific file from the repository
-    git restore <file>  # Undo changes in the working directory for a specific file
-    ```
+```bash
+git add <file>      # Add a specific file to the staging area
+git rm <file>       # Remove a specific file from the repository
+git restore <file>  # Undo changes in the working directory for a specific file
+```
 
-3. Commit your changes:
+### Commit your changes
 
-    ```bash
-    git commit -m "<message>"
-    ```
+```bash
+git commit -m "<message>"
+```
 
-4. Push changes to the remote repository:
+### Push changes to the remote repository
 
-    ```bash
-    git push
-    ```
+```bash
+git push
+```
 
 ---
 
-### First-Time Setup for a New Remote Repository
+## First-Time Setup for a New Remote Repository
 
-1. Add the remote repository:
+### Add the remote repository
 
-    ```bash
-    git remote add origin <url>
-    ```
+```bash
+git remote add origin <url>
+```
 
-2. Verify the remote is set correctly:
+### Verify the remote is set correctly
 
-    ```bash
-    git remote -v
-    ```
+```bash
+git remote -v
+```
 
-3. Rename the current branch to `main`:
+### Rename the current branch to `main`
 
-    ```bash
-    git branch -M main
-    ```
+```bash
+git branch -M main
+```
 
-4. Push changes to the remote repository:
+### Push changes to the remote repository
 
-    ```bash
-    git push -u origin main
-    ```
+```bash
+git push -u origin main
+```
+
+---
+
+## Adding and Managing Tags
+
+### List Tags
+
+```bash
+git tag   # List all tags
+```
+
+### Create a Tag
+
+```bash
+git tag <tagname>                     # Create a lightweight tag
+git tag -a <tagname> -m "<message>"   # Create an annotated tag with a message
+```
+
+### Show Tag Details
+
+```bash
+git show <tagname>   # Show details of a specific tag
+```
+
+### Push Tags to Remote
+
+```bash
+git push origin <tagname>   # Push a specific tag to the remote repository
+git push origin --tags      # Push all tags to the remote repository
+```
+
+### Delete a Tag
+
+```bash
+git tag -d <tagname>                 # Delete a specific tag
+git push origin --delete <tagname>   # Delete a tag from the remote repository
+```
 
 ---
