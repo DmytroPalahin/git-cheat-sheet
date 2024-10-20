@@ -1,0 +1,38 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore all .env files
+.env
+
+# Ignore all .conda files
+.conda
+
+# Ignore all .vscode files
+.vscode
+
+# Ignore LaTeX build files
+*.aux          
+*.bbl          
+*.blg          
+*.fdb_latexmk  
+*.fls          
+*.log          
+*.out          
+*.toc          
+*.gz           
+*.synctex.gz   
+
+# Ignore temporary files
+*.tmp       
+*.bak       
+*~          
+
+# Ignore editor backup files (e.g., from Vim or Emacs)
+*~          
+.#*        
