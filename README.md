@@ -29,7 +29,10 @@ git config --global user.email "dmytro.palahin@gmail.com"
 ### 🏁 Initialize a Git repository
 
 ```bash
-git init    # Initialize a Git repository in the project
+git init                                # Initialize a Git repository in the project
+git remote -v                           # Show remote repositories
+git remote add origin <repository-url>  # Add a remote repository
+git push -u origin master               # Push changes to the remote repository
 ```
 
 ### 📊 Check repository status
@@ -95,7 +98,7 @@ git cat-file -p <commit hash>    # Show content of the object
 
 ```bash
 git push                 # Push changes from the local repository to the remote
-git pull                 # Pull changes from the remote repository to the local
+git pull                 # Apply changes from a remote repository into your current local branch
 git clone <url>          # Clone a remote repository to the local machine
 ```
 
@@ -142,6 +145,7 @@ git commit -m "<message>"
 
 ```bash
 git push
+git push --set-upstream origin <branch-name>
 ```
 
 ---
@@ -207,6 +211,57 @@ git push origin --tags      # Push all tags to the remote repository
 ```bash
 git tag -d <tagname>                 # Delete a specific tag
 git push origin --delete <tagname>   # Delete a tag from the remote repository
+```
+
+---
+
+## 🔄 Rename a Branch Locally and Remotely
+
+### 🌿 Rename the branch locally
+
+```bash
+git branch -m <old-branch-name> <new-branch-name>
+```
+
+### 🚀 Push the renamed branch to the remote
+
+```bash
+git push origin <new-branch-name>
+```
+
+### 🗑️ Delete the old branch from the remote
+
+```bash
+git push origin --delete <old-branch-name>
+```
+
+### 🌐 Reset the upstream branch for the new branch
+
+```bash
+git push --set-upstream origin <new-branch-name>
+```
+
+---
+
+## 🏷️ Rename a Tag Locally and Remotely
+
+### 🏷️ Rename the tag locally
+
+```bash
+git tag <new-tag-name> <old-tag-name>   # Create a new tag with the old tag's commit
+git tag -d <old-tag-name>               # Delete the old tag locally
+```
+
+### 🚀 Push the new tag to the remote
+
+```bash
+git push origin <new-tag-name>
+```
+
+### 🗑️ Delete the old tag from the remote
+
+```bash
+git push origin --delete <old-tag-name>
 ```
 
 ---
