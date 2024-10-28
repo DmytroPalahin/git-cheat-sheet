@@ -50,8 +50,9 @@ git log    # View history of commits
 ### ➕ Adding and Removing Files
 
 ```bash
-git add .       # Add all files from working directory to the staging area
-git rm <file>   # Remove file from the staging area and working directory
+git add .                   # Add all files from working directory to the staging area
+git add -f environment.yml  # Add a specific file with force
+git rm <file>               # Remove file from the staging area and working directory
 ```
 
 ### 💾 Commit Changes
