@@ -173,6 +173,7 @@ env.bak/
 venv.bak/
 ENV.bak/
 .conda
+!environment.yml
 
 # mkdocs
 /site
@@ -188,7 +189,6 @@ exploration/
 stats.json
 .viz
 env*
-!environement.yml
 post_init_vars
 vars.json
 notebooks/**
@@ -239,6 +239,11 @@ pull_request_template.md
 *.toc          
 *.gz           
 *.synctex.gz
+*.pdfsync
+*.glg
+*.glo
+*.gls
+*.ist
 
 # temp
 *.tmp       
