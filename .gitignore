@@ -294,3 +294,6 @@ lex.yy.o
 
 # compiled files
 *.zip
+
+# ruff
+.ruff_cache
