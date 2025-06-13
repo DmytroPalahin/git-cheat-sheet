@@ -1,3 +1,5 @@
+🇬🇧 [English](README.md) | 🇫🇷 [Français](README.fr.md)
+
 # 📋 Git Cheat Sheet
 
 ## 🌀 Git - Distributed Version Control System
@@ -7,16 +9,16 @@
 ## 🛠️ Basic Git Commands
 
 ```bash
-git --version      # Show Git version
-git --help         # Show help for Git commands
+git --version      # show Git version
+git --help         # show help for Git commands
 ```
 
 ### ⚙️ Configure Git
 
 ```bash
-git config --global user.name <name>     # Set global username
-git config --global user.email <email>   # Set global email
-git config --list                        # Show Git configuration
+git config --global user.name <name>     # set global username
+git config --global user.email <email>   # set global email
+git config --list                        # show Git configuration
 ```
 
 Example:
@@ -29,93 +31,93 @@ git config --global user.email "dmytro.palahin@gmail.com"
 ### 🏁 Initialize a Git repository
 
 ```bash
-git init                                # Initialize a Git repository in the project
-git remote -v                           # Show remote repositories
-git remote add origin <repository-url>  # Add a remote repository
-git push -u origin master               # Push changes to the remote repository
+git init                                # initialize a Git repository in the project
+git remote -v                           # show remote repositories
+git remote add origin <repository-url>  # add a remote repository
+git push -u origin master               # push changes to the remote repository
 ```
 
 ### 📊 Check repository status
 
 ```bash
-git status   # Show staging area and changes to be committed
+git status                              # show staging area and changes to be committed
 ```
 
 ### 📜 View commit history
 
 ```bash
-git log    # View history of commits
+git log                                 # view history of commits
 ```
 
 ### ➕ Adding and Removing Files
 
 ```bash
-git add .                   # Add all files from working directory to the staging area
-git add -f environment.yml  # Add a specific file with force
-git rm <file>               # Remove file from the staging area and working directory
+git add .                               # add all files from working directory to the staging area
+git add -f environment.yml              # add a specific file with force
+git rm <file>                           # remove file from the staging area and working directory
 ```
 
 ### 💾 Commit Changes
 
 ```bash
-git commit -m "<message>"  # Commit changes in the staging area with a message
+git commit -m "<message>"               # commit changes in the staging area with a message
 ```
 
 ### 🌿 Check Out Branches and Commits
 
 ```bash
-git checkout <commit hash>       # Checkout a specific commit
-git checkout <branch name>       # Switch to an existing branch
-git checkout -b <branch name>    # Create a new branch and switch to it
-git checkout main                # Switch back to the main branch
+git checkout <commit hash>              # checkout a specific commit
+git checkout <branch name>              # switch to an existing branch
+git checkout -b <branch name>           # create a new branch and switch to it
+git checkout main                       # switch back to the main branch
 ```
 
 ### 🌲 Branch Management
 
 ```bash
-git branch <branch name>   # Create a new branch
-git branch                 # List all branches
-git branch -a              # List all branches, including remote ones
-git branch -m <new name>   # Rename the current branch
-git branch -d <branch>     # Delete a branch (can't delete the current branch)
-git branch -vv             # List all branches with additional information
+git branch <branch name>                # create a new branch
+git branch                              # list all branches
+git branch -a                           # list all branches, including remote ones
+git branch -m <new name>                # rename the current branch
+git branch -d <branch>                  # delete a branch (can't delete the current branch)
+git branch -vv                          # list all branches with additional information
 ```
 
 ### 🔀 Merging Branches
 
 ```bash
-git merge <feature branch>            # Merge a feature branch into the current branch
-git merge -m "<message>" <branch>     # Merge with a custom message
+git merge <feature branch>              # merge a feature branch into the current branch
+git merge -m "<message>" <branch>       # merge with a custom message
 ```
 
 ### 🔍 Inspecting Commits
 
 ```bash
-git cat-file -t <commit hash>    # Show type of an object (commit, blob, etc.)
-git cat-file -p <commit hash>    # Show content of the object
+git cat-file -t <commit hash>           # show type of an object (commit, blob, etc.)
+git cat-file -p <commit hash>           # show content of the object
 ```
 
 ### 🔄 Push and Pull Changes
 
 ```bash
-git push                 # Push changes from the local repository to the remote
-git pull                 # Apply changes from a remote repository into your current local branch
-git clone <url>          # Clone a remote repository to the local machine
+git push                                # push changes from the local repository to the remote
+git pull                                # apply changes from a remote repository into your current local branch
+git clone <url>                         # clone a remote repository to the local machine
 ```
 
 ### 🌐 Remote Repository Management
 
 ```bash
-git remote add origin <url>  # Connect a remote repository
-git remote                   # List remote repositories
-git remote -v                # Show URLs for remote repositories
+git remote add origin <url>             # connect a remote repository
+git remote                              # list remote repositories
+git remote -v                           # show URLs for remote repositories
 ```
 
 ### 🚀 Push Changes to Remote
 
 ```bash
-git push -u origin <branch>   # Push changes to the remote repository and track the branch
-git push -u origin main       # Push changes to the main branch
+git push -u origin <branch>             # push changes to the remote repository and track the branch
+git push -u origin main                 # push changes to the main branch
 ```
 
 ---
@@ -131,9 +133,9 @@ git status
 ### ➕ Add or remove files
 
 ```bash
-git add <file>      # Add a specific file to the staging area
-git rm <file>       # Remove a specific file from the repository
-git restore <file>  # Undo changes in the working directory for a specific file
+git add <file>              # add a specific file to the staging area
+git rm <file>               # remove a specific file from the repository
+git restore <file>          # undo changes in the working directory for a specific file
 ```
 
 ### 💾 Commit your changes
@@ -184,34 +186,34 @@ git push -u origin main
 ### 📜 List Tags
 
 ```bash
-git tag   # List all tags
+git tag   # list all tags
 ```
 
 ### 🏷️ Create a Tag
 
 ```bash
-git tag <tagname>                     # Create a lightweight tag
-git tag -a <tagname> -m "<message>"   # Create an annotated tag with a message
+git tag <tagname>                       # create a lightweight tag
+git tag -a <tagname> -m "<message>"     # create an annotated tag with a message
 ```
 
 ### 🔍 Show Tag Details
 
 ```bash
-git show <tagname>   # Show details of a specific tag
+git show <tagname>                      # show details of a specific tag
 ```
 
 ### 🚀 Push Tags to Remote
 
 ```bash
-git push origin <tagname>   # Push a specific tag to the remote repository
-git push origin --tags      # Push all tags to the remote repository
+git push origin <tagname>               # push a specific tag to the remote repository
+git push origin --tags                  # push all tags to the remote repository
 ```
 
 ### 🗑️ Delete a Tag
 
 ```bash
-git tag -d <tagname>                 # Delete a specific tag
-git push origin --delete <tagname>   # Delete a tag from the remote repository
+git tag -d <tagname>                    # delete a specific tag
+git push origin --delete <tagname>      # delete a tag from the remote repository
 ```
 
 ---
@@ -249,8 +251,8 @@ git push --set-upstream origin <new-branch-name>
 ### 🏷️ Rename the tag locally
 
 ```bash
-git tag <new-tag-name> <old-tag-name>   # Create a new tag with the old tag's commit
-git tag -d <old-tag-name>               # Delete the old tag locally
+git tag <new-tag-name> <old-tag-name>       # create a new tag with the old tag's commit
+git tag -d <old-tag-name>                   # delete the old tag locally
 ```
 
 ### 🚀 Push the new tag to the remote
