@@ -1,7 +1,5 @@
 🇬🇧 [English](README.md) | 🇫🇷 [Français](README.fr.md)
 
-🇬🇧 [English](README.md) | 🇫🇷 [Français](README.fr.md)
-
 # 📋 Git Cheat Sheet
 
 ## 🌀 Git - Système de contrôle de version distribué
