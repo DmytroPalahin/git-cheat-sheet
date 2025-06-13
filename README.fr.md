@@ -144,7 +144,7 @@ git restore <file>          # annuler les modifications dans le répertoire de t
 git commit -m "<message>"
 ```
 
-### 🚀 Envoyer les modifications au dépôt distant
+### 🚀 Envoyer les modifications au dépôt distant (workflow)
 
 ```bash
 git push
