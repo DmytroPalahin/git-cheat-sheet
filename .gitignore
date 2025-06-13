@@ -3,7 +3,7 @@ conf/**/local/**
 !conf/**/local/.gitkeep
 
 # directories
-data/**
+# data/**
 logs/**
 creds/**
 # except thiers subfolders
@@ -174,7 +174,7 @@ venv.bak/
 ENV.bak/
 .conda
 .env*.local
-!environment.yml
+# !environment.yml
 
 # mkdocs
 /site
@@ -248,6 +248,7 @@ pull_request_template.md
 *.glo
 *.gls
 *.ist
+*.lol
 
 # temp
 *.tmp       
@@ -257,7 +258,7 @@ pull_request_template.md
 
 # other
 screenlog*
-instances
+# instances
 labels
 predictions
 
@@ -285,8 +286,6 @@ next-env.d.ts
 # lex.yy.h
 lex.yy.o
 
-# bison
-
 # c extensions
 *.so
 *.dylib
@@ -297,3 +296,7 @@ lex.yy.o
 
 # ruff
 .ruff_cache
+
+# julia
+Manifest.toml
+Project.toml
